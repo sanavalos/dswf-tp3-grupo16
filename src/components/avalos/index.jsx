@@ -1,12 +1,14 @@
 import React from 'react'
-import Button from './Button'
-
+import ComicPage from './ComicPage.jsx'
+import ButtonsSection from './ButtonsSection.jsx'
+import styles from './Avalos.module.css'
 function Avalos() {
   return (
-   <>
-   <p> PAGINA AVALOS</p>
-    <Button>Boton</Button>
-    </>
+   <div className={styles.pageContainer}>
+    <ButtonsSection buttonsText={['portada']}/>
+    <ComicPage/>
+    <ButtonsSection buttonsText={['anterior', 'siguiente']}/>
+    </div>
   )
 }
 
