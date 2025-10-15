@@ -1,0 +1,463 @@
+
+.pageContainer {
+  position: relative;
+  max-width: 1000px;
+  margin: 1rem auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+}
+
+.comicPage {
+  position: relative;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.comicPage {
+  background: white;
+  color: black;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 15px;
+  padding: 2rem;
+  position: relative;
+  grid-template-areas:
+    "hero hero hero hero profile"
+    "about about skills skills skills"
+    "university university university projects projects"
+    "footer footer footer footer footer";
+}
+
+.panel {
+  background: white;
+  position: relative;
+  padding: 20px;
+  box-shadow: inset 0 0 0 2px white, 0 0 0 6px black;
+}
+
+.heroPanel {
+  grid-area: hero;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 300px;
+}
+
+.profilePanel {
+  grid-area: profile;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  position: relative;
+  transform: scale(1.2);
+  z-index: 1;
+  margin-bottom: -2.2rem;
+}
+
+.locationPanel {
+  grid-area: about;
+  background: white;
+}
+
+.skillsPanel {
+  grid-area: skills;
+  background: black;
+  color: white;
+  box-shadow: none !important;
+}
+
+.musicPanel {
+  grid-area: university;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  flex-wrap: wrap;
+}
+
+.musicPanel:hover {
+  transform: scale(1);
+}
+
+.moviesPanel {
+  grid-area: projects;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footerPanel {
+  grid-area: footer;
+  background: white;
+  text-align: center;
+  padding: 15px;
+  box-shadow: inset 0 0 0 2px white, 0 0 0 6px black;
+  filter: blur(5px);
+  transition: filter 0.4s ease-in-out;
+}
+
+.footerPanel:hover {
+  filter: blur(0px);
+}
+
+.heroTitle {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.3);
+}
+
+.heroSubtitle {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.8rem;
+  transform: rotate(-2deg);
+}
+
+.panelTitle {
+  font-family: "Bangers", cursive;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.panelText {
+  font-family: "Bangers", cursive;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.speechBubble {
+  background: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  position: relative;
+  margin: 15px 0;
+  max-width: 250px;
+  width: fit-content;
+}
+
+.speechBubble::after {
+  content: "";
+  position: absolute;
+  bottom: -14.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: white transparent transparent transparent;
+  z-index: 1;
+}
+
+.speechBubble::before {
+  content: "";
+  position: absolute;
+  bottom: -18.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 18px 0 18px;
+  border-color: black transparent transparent transparent;
+  z-index: -1;
+}
+
+.profileImage {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 14px;
+  position: absolute;
+  margin-right: 50px;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skillItem {
+  background: white;
+  color: black;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.infoBox {
+  background: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.ageBox {
+  display: none;
+  background: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.infoNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.infoLabel {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.halftone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle, black 1px, transparent 1px);
+  background-size: 8px 8px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.zigzagBorder {
+  position: relative;
+}
+
+.zigzagBorder:hover {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: #fbc638;
+  color: #fbc638;
+}
+
+.zigzagBorder::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: repeating-linear-gradient(
+    45deg,
+    black,
+    black 5px,
+    white 5px,
+    white 10px
+  );
+  z-index: -1;
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@keyframes pageCurl {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    width: 140px;
+    height: 140px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .profilePanel {
+    transform: none;
+    margin-bottom: 0;
+  }
+
+  .ageInfo {
+    display: none;
+  }
+
+  .ageBox {
+    display: block;
+  }
+
+  .profileImage {
+    width: 180px;
+    height: 180px;
+    border: 6px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .comicPage {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "profile"
+      "about"
+      "skills"
+      "university"
+      "projects"
+      "footer";
+    gap: 10px;
+    padding: 10px;
+    border: 0px;
+    background-color: transparent;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .panelTitle {
+    font-size: 1.8rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .wrapper {
+    margin-top: none;
+  }
+
+  .bottom-buttons {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .animatedFold {
+    animation: none !important;
+    clip-path: none !important;
+    position: static;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .animatedFold::before {
+    display: none !important;
+  }
+
+  .animatedFold::after {
+    display: none !important;
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: end;
+}
+.prevWrapper {
+  display: flex;
+  justify-content: start;
+}
+
+.animatedFold {
+  position: relative;
+  background: white;
+  padding: 40px 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px);
+  animation: clipFold 3s infinite ease-in-out;
+}
+
+.animatedFold::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 40px 40px 0 0;
+  border-color: #e8e8e8 transparent transparent transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  animation: foldBefore 3s infinite ease-in-out;
+  z-index: 1;
+}
+
+.animatedFold::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 35px 35px 0 0;
+  border-color: white transparent transparent transparent;
+  animation: foldAfter 3s infinite ease-in-out;
+  z-index: 2;
+}
+
+@keyframes clipFold {
+  0%,
+  100% {
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px);
+  }
+  50% {
+    clip-path: polygon(70px 0, 100% 0, 100% 100%, 0 100%, 0 70px);
+  }
+}
+
+@keyframes foldBefore {
+  0%,
+  100% {
+    border-width: 40px 40px 0 0;
+  }
+  50% {
+    border-width: 70px 70px 0 0;
+  }
+}
+
+@keyframes foldAfter {
+  0%,
+  100% {
+    border-width: 35px 35px 0 0;
+  }
+  50% {
+    border-width: 65px 65px 0 0;
+  }
+}
