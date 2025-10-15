@@ -4,6 +4,7 @@ import styles from "./Layout.module.css"
 
 function Layout() {
   return (
+   <>
     <div className={styles.layoutBackground}>
       <Sidebar />
 
@@ -12,9 +13,10 @@ function Layout() {
         <Outlet />
       </main>
       
-      <footer>
-      </footer>
     </div>
+    <footer>
+    </footer>
+   </>
   );
 }
 
