@@ -1,0 +1,17 @@
+.sidebarSection {
+  font-family: "Roboto", Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 2.25;
+  padding: 2rem;
+  border-right: 1px solid #ddd;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+    max-width: 5rem;
+    margin-bottom: 2rem;
+}
