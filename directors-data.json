@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "director": "Alfred Hitchcock",
+    "nationality": "British",
+    "era_active": "1920s-1970s",
+    "known_for_genre": "Thriller, Suspense",
+    "notable_films": ["Psycho", "Vertigo", "Rear Window", "The Birds"],
+    "signature_style_elements": ["Cameo appearances", "MacGuffins", "Voyeurism themes"]
+  },
+  {
+    "id": 2,
+    "director": "Stanley Kubrick",
+    "nationality": "American",
+    "era_active": "1950s-1990s",
+    "known_for_genre": "Diverse (Sci-Fi, War, Drama)",
+    "notable_films": ["2001: A Space Odyssey", "The Shining", "A Clockwork Orange", "Dr. Strangelove"],
+    "signature_style_elements": ["One-point perspective", "Symmetry", "Steadicam shots"]
+  },
+  {
+    "id": 3,
+    "director": "Steven Spielberg",
+    "nationality": "American",
+    "era_active": "1960s-Present",
+    "known_for_genre": "Blockbuster, Adventure, Historical Drama",
+    "notable_films": ["Jaws", "E.T. the Extra-Terrestrial", "Jurassic Park", "Schindler's List"],
+    "signature_style_elements": ["Sense of wonder", "Backlighting", "Child/Family themes"]
+  },
+  {
+    "id": 4,
+    "director": "Martin Scorsese",
+    "nationality": "American",
+    "era_active": "1960s-Present",
+    "known_for_genre": "Crime, Gangster, Biography",
+    "notable_films": ["Taxi Driver", "Raging Bull", "Goodfellas", "The Departed"],
+    "signature_style_elements": ["Voiceover narration", "Slow-motion shots", "Complex camera movements"]
+  },
+  {
+    "id": 5,
+    "director": "Francis Ford Coppola",
+    "nationality": "American",
+    "era_active": "1960s-Present",
+    "known_for_genre": "Epic Drama, Crime",
+    "notable_films": ["The Godfather", "Apocalypse Now", "The Conversation", "The Godfather Part II"],
+    "signature_style_elements": ["Dark, rich cinematography", "Themes of power and family", "Long takes"]
+  },
+  {
+    "id": 6,
+    "director": "Akira Kurosawa",
+    "nationality": "Japanese",
+    "era_active": "1940s-1990s",
+    "known_for_genre": "Jidaigeki (Period Drama), Action",
+    "notable_films": ["Seven Samurai", "Rashomon", "Ran", "Yojimbo"],
+    "signature_style_elements": ["Wipe transitions", "Action in motion", "Use of natural elements (wind, rain)"]
+  },
+  {
+    "id": 7,
+    "director": "Ingmar Bergman",
+    "nationality": "Swedish",
+    "era_active": "1940s-2000s",
+    "known_for_genre": "Art House, Psychological Drama",
+    "notable_films": ["The Seventh Seal", "Persona", "Fanny and Alexander", "Wild Strawberries"],
+    "signature_style_elements": ["Close-ups of faces", "Themes of faith and morality", "Monochromatic palettes"]
+  },
+  {
+    "id": 8,
+    "director": "Quentin Tarantino",
+    "nationality": "American",
+    "era_active": "1990s-Present",
+    "known_for_genre": "Neo-Noir, Crime",
+    "notable_films": ["Pulp Fiction", "Reservoir Dogs", "Inglourious Basterds", "Kill Bill"],
+    "signature_style_elements": ["Non-linear narratives", "Sharp, stylized dialogue", "Extensive use of music"]
+  },
+  {
+    "id": 9,
+    "director": "Christopher Nolan",
+    "nationality": "British-American",
+    "era_active": "1990s-Present",
+    "known_for_genre": "Sci-Fi, Thriller",
+    "notable_films": ["The Dark Knight", "Inception", "Interstellar", "Oppenheimer"],
+    "signature_style_elements": ["Complex time manipulation", "Practical effects", "Non-digital filmmaking preference"]
+  },
+  {
+    "id": 10,
+    "director": "Fritz Lang",
+    "nationality": "Austrian-German/American",
+    "era_active": "1910s-1960s",
+    "known_for_genre": "Expressionist, Sci-Fi, Film Noir",
+    "notable_films": ["Metropolis", "M", "The Big Heat", "Woman in the Moon"],
+    "signature_style_elements": ["Shadows and high contrast lighting", "Grand scale sets", "Themes of technology/society"]
+  },
+  {
+    "id": 11,
+    "director": "Billy Wilder",
+    "nationality": "Austrian-American",
+    "era_active": "1920s-1980s",
+    "known_for_genre": "Comedy, Film Noir, Drama",
+    "notable_films": ["Sunset Boulevard", "Some Like It Hot", "The Apartment", "Double Indemnity"],
+    "signature_style_elements": ["Sharp dialogue", "Dark humor", "Cynical view of human nature"]
+  },
+  {
+    "id": 12,
+    "director": "Federico Fellini",
+    "nationality": "Italian",
+    "era_active": "1940s-1990s",
+    "known_for_genre": "Surrealism, Art House",
+    "notable_films": ["8½", "La Dolce Vita", "Amarcord", "Nights of Cabiria"],
+    "signature_style_elements": ["Carnivalesque imagery", "Dream sequences", "Grand and flamboyant visual style"]
+  },
+  {
+    "id": 13,
+    "director": "Chlo\u00e9 Zhao",
+    "nationality": "Chinese-American",
+    "era_active": "2010s-Present",
+    "known_for_genre": "Independent Drama",
+    "notable_films": ["Nomadland", "The Rider", "Songs My Brothers Taught Me"],
+    "signature_style_elements": ["Use of non-professional actors", "Natural light cinematography", "Themes of the American West"]
+  },
+  {
+    "id": 14,
+    "director": "Hayao Miyazaki",
+    "nationality": "Japanese",
+    "era_active": "1960s-Present",
+    "known_for_genre": "Animation, Fantasy",
+    "notable_films": ["Spirited Away", "Princess Mononoke", "My Neighbor Totoro", "Howl's Moving Castle"],
+    "signature_style_elements": ["Environmentalism themes", "Strong female protagonists", "Detailed hand-drawn animation"]
+  },
+  {
+    "id": 15,
+    "director": "Kathryn Bigelow",
+    "nationality": "American",
+    "era_active": "1980s-Present",
+    "known_for_genre": "Action, Thriller, War",
+    "notable_films": ["The Hurt Locker", "Zero Dark Thirty", "Point Break", "Near Dark"],
+    "signature_style_elements": ["Intense realism", "High-stakes action sequences", "Moral ambiguity"]
+  },
+  {
+    "id": 16,
+    "director": "Orson Welles",
+    "nationality": "American",
+    "era_active": "1930s-1980s",
+    "known_for_genre": "Drama, Film Noir",
+    "notable_films": ["Citizen Kane", "The Lady from Shanghai", "Touch of Evil", "The Magnificent Ambersons"],
+    "signature_style_elements": ["Deep focus cinematography", "Low-angle shots", "Overlapping dialogue"]
+  },
+  {
+    "id": 17,
+    "director": "Satyajit Ray",
+    "nationality": "Indian",
+    "era_active": "1950s-1990s",
+    "known_for_genre": "Social Drama",
+    "notable_films": ["Pather Panchali", "Aparajito", "The World of Apu", "Charulata"],
+    "signature_style_elements": ["Poetic realism", "Humanist themes", "Detailed observation of life"]
+  },
+  {
+    "id": 18,
+    "director": "Lana & Lilly Wachowski",
+    "nationality": "American",
+    "era_active": "1990s-Present",
+    "known_for_genre": "Sci-Fi, Action",
+    "notable_films": ["The Matrix", "V for Vendetta (Writers)", "Cloud Atlas", "Sense8"],
+    "signature_style_elements": ["Groundbreaking visual effects", "Philosophical themes", "Bullet time"]
+  },
+  {
+    "id": 19,
+    "director": "Jordan Peele",
+    "nationality": "American",
+    "era_active": "2010s-Present",
+    "known_for_genre": "Horror, Social Satire",
+    "notable_films": ["Get Out", "Us", "Nope"],
+    "signature_style_elements": ["Social commentary through genre", "Unsettling humor", "Twist endings"]
+  },
+  {
+    "id": 20,
+    "director": "Jane Campion",
+    "nationality": "New Zealander",
+    "era_active": "1980s-Present",
+    "known_for_genre": "Drama",
+    "notable_films": ["The Piano", "Bright Star", "The Power of the Dog"],
+    "signature_style_elements": ["Focus on female experience", "Sensual and visceral imagery", "Detailed period settings"]
+  }
+]
