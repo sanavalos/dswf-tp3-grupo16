@@ -1,5 +1,6 @@
 .boton {
   padding: 0.5rem 1rem;
+  min-width: 6rem;
   background-color: #f97316;
   color: white;
   border: none;
@@ -20,4 +21,12 @@
 .boton:active {
   transform: scale(0.97);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 400px) {
+  .boton {
+    font-size: 10px;
+    min-width: 2rem;
+    max-width: 4.5rem;
+  }
 }
