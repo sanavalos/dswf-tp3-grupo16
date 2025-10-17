@@ -1,0 +1,63 @@
+.tarjeta {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.foto {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+.foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.foto img:hover {
+  transform: scale(1.1);
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+.info h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.habilidades {
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.peliculas h2,
+.musica h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.botonesNavegacion {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  margin: 1.5rem auto;
+}
