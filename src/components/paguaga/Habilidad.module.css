@@ -1,0 +1,14 @@
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transform: scale(0);
+  animation: pop 0.5s forwards;
+  color: white;
+}
+
+@keyframes pop {
+  to {
+    transform: scale(1);
+  }
+}
