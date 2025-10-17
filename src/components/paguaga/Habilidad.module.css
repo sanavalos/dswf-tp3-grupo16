@@ -2,13 +2,18 @@
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-weight: bold;
-  transform: scale(0);
-  animation: pop 0.5s forwards;
   color: white;
+  display: inline-block;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-@keyframes pop {
-  to {
-    transform: scale(1);
-  }
+.tag.appear {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.tag:hover {
+  transform: scale(1.2);
 }

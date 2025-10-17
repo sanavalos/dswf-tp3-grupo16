@@ -63,6 +63,10 @@ export default function Tarjeta() {
 
   return (
     <main className={styles.tarjeta}>
+      <a href="/" className={styles.btnHome}>
+        Portada
+      </a>
+
       <section className={styles.foto}>
         <img src={imgAvatar} alt="Avatar Santiago" />
       </section>

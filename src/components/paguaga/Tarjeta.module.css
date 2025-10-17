@@ -1,19 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 .tarjeta {
   position: relative;
   z-index: 1;
   width: 90%;
   max-width: 800px;
-  margin: 1rem auto;
+  margin: 2rem auto;
   background: #1e1e1e;
   padding: 2rem;
   border-radius: 40px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+.tarjeta h1,
+.tarjeta h2,
+.tarjeta h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btnHome {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f97316;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btnHome:hover {
+  background-color: #ea580c;
+  transform: scale(1.05);
+}
+
+.btnHome,
+.boton {
+  font-family: "Montserrat", sans-serif;
 }
 
 .foto {
   text-align: center;
-  margin: 2rem 0 1rem;
+  margin: 2rem 0 0.5rem 0;
 }
+
 .foto img {
   width: 150px;
   height: 150px;
@@ -31,15 +67,15 @@
   color: white;
 }
 .info h1 {
-  margin: 0;
+  margin: 0.5rem;
   font-size: 2rem;
 }
 
 .habilidades {
   color: white;
   text-align: center;
-  margin-bottom: 3rem;
 }
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -48,16 +84,29 @@
   margin-top: 1rem;
 }
 
+.habilidades h2,
 .peliculas h2,
 .musica h2 {
   text-align: center;
   color: white;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .botonesNavegacion {
   display: flex;
-  justify-content: center;
-  gap: 7rem;
-  margin: 1.5rem auto;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+.info {
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 2rem 0;
+}
+
+.habilidades,
+.peliculas,
+.musica {
+  font-family: "Roboto", sans-serif;
+  margin: 2rem 0;
 }

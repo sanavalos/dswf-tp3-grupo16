@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./SpotifyIframe.module.css";
+import styles from "./Spotify.module.css";
 
 export default function Spotify({ src }) {
   return (

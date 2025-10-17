@@ -2,6 +2,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import Avalos from "./components/avalos";
+import Paguaga from "./components/paguaga";
 import Layout from "./components/layout/index.jsx";
 import { BrowserRouter, Routes, Route } from "react-router";
 
