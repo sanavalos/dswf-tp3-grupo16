@@ -5,9 +5,7 @@ const DirectorCard = ({ directorData }) => {
   return (
     <div className={styles.cardStyle}>
       <h2>{directorData.director}</h2>
-      <p>
-        <strong>Nationality:</strong> {directorData.nationality}
-      </p>
+      <h3>{directorData.nationality}</h3>
       <p>
         <strong>Active:</strong> {directorData.era_active}
       </p>
