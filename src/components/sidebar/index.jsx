@@ -5,10 +5,10 @@ import ifts from "../../assets/ifts.jpeg";
 
 function Sidebar() {
   const sidebarItems = [
-    { id: "1", name: "Portada", path: "/" },
+    { id: "1", name: "Portada", path: "/#titulo-variable" },
     { id: "2", name: "Bitácora", path: "/bitacora" },
-    { id: "3", name: "Sobre Nosotros", path: "/sobre-nosotros" },
-    { id: "4", name: "Integrantes", path: "/integrantes" },
+    { id: "3", name: "Sobre Nosotros", path: "/#nosotros" },
+    { id: "4", name: "Integrantes", path: "/#integrantes" },
     { id: "5", name: "Sección JSON", path: "/seccion-json" },
     { id: "6", name: "Sección API", path: "/seccion-api" }
   ];
