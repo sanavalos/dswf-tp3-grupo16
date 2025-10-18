@@ -1,0 +1,118 @@
+.bitacoraContainer {
+  padding: 1rem;
+  max-width: 70rem;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+}
+
+.bitacoraContainer h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin: 4rem auto;
+  padding: 6rem 1rem;
+  background: linear-gradient(270deg, #ff7eb3, #ff758c, #7afcff, #feff9c);
+  background-size: 800% 800%;
+  animation: gradientBG 12s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tpButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tpButtons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.tpButtons button:hover {
+  background-color: #ccc;
+}
+
+.tpButtons button.active {
+  background: linear-gradient(270deg, #ff7eb3, #ff758c, #7afcff, #feff9c);
+  background-size: 800% 800%;
+  color: #fff;
+  animation: gradientBG 12s ease infinite;
+}
+
+.bitacoraCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0 4rem 0;
+}
+
+.bitacoraCard {
+  background: #eaeaea;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 0 1 18rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bitacoraCard h3 {
+  color: #ff758c;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.bitacoraCard p {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.bitacoraCard .fecha {
+  font-size: 0.8rem;
+  color: #888;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.bitacoraCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .bitacoraCard {
+    flex: 0 1 100%;
+  }
+}
