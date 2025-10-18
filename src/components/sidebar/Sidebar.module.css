@@ -6,12 +6,54 @@
   padding: 2rem;
   border-right: 1px solid #ddd;
   min-width: fit-content;
+  transition: width 0.3s ease, padding 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.logo{
-    max-width: 5rem;
-    margin-bottom: 2rem;
+.sidebarSection.closed {
+  width: 50px;
+  padding: 1rem;
+}
+
+.sidebarSection.closed .sidebarContent {
+  display: none;
+}
+
+.sidebarContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.logo {
+  max-width: 5rem;
+  margin-bottom: 2rem;
+}
+
+.sidebarSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarSection:not(.closed) .toggleButton {
+  top: 0.5rem;
+  right: 0.5rem;
 }
