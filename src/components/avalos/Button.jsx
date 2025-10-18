@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-function Button({ text, pointForward = false }) {
+function Button({ text, url, pointForward = false }) {
   return (
     <div className={styles.prevWrapper}>
       <a
-        className={`${styles.pageButton} ${!pointForward && styles.previousButton}`}
-        href="/"
+        className={`${styles.pageButton} ${
+          !pointForward && styles.previousButton
+        }`}
+        href={url}
       >
         {pointForward ? (
           <>
