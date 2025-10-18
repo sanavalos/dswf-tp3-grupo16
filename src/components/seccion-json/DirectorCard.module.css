@@ -2,11 +2,18 @@ h2,
 h3 {
   text-align: center;
 }
+
+h2 span {
+  font-size: large;
+  color: #878787;
+}
+
 .cardStyle {
+  min-width: 350px; 
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 0.75rem;
   padding: 1.5rem;
-  width: 450px;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
   text-align: start;
@@ -14,6 +21,6 @@ h3 {
 
 @media (max-width: 900px) {
   .cardStyle {
-    width: fit-content;
+    min-width: unset; 
   }
 }
