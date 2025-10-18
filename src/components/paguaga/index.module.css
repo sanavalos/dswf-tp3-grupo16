@@ -1,0 +1,36 @@
+.fondoAnimado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(-45deg, #4a90e2, #1d4ed8, #e0f2ff, #93c5fd);
+  background-size: 400% 400%;
+  animation: moverFondo 10s ease infinite;
+  pointer-events: none;
+}
+
+@keyframes moverFondo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 2rem;
+  z-index: 1;
+}

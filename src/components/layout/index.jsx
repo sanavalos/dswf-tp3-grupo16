@@ -8,6 +8,7 @@ function Layout() {
     <>
       <div className={styles.layoutBackground}>
         <Sidebar />
+
         <main className={styles.mainWrapper}>
           {/* Render route child component */}
           <Outlet />

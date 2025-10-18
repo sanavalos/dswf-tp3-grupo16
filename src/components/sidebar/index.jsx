@@ -10,7 +10,7 @@ function Sidebar() {
     { id: "3", name: "Sobre Nosotros", path: "/#nosotros" },
     { id: "4", name: "Integrantes", path: "/#integrantes" },
     { id: "5", name: "Sección JSON", path: "/seccion-json" },
-    { id: "6", name: "Sección API", path: "/seccion-api" }
+    { id: "6", name: "Sección API", path: "/seccion-api" },
   ];
   return (
     <div className={styles.sidebarSection}>

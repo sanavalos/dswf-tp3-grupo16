@@ -6,6 +6,7 @@ import Bitacora from "./components/bitacora";
 import MovieSection from "./components/seccion-api";
 import Layout from "./components/layout/index.jsx";
 import SeccionJson from "./components/seccion-json/index.jsx";
+import Paguaga from "./components/paguaga";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 createRoot(document.getElementById("root")).render(
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="bitacora" element={<Bitacora />} />
         <Route path="seccion-api" element={<MovieSection />} />
         <Route path="seccion-json" element={<SeccionJson />} />
+        <Route path="paguaga" element={<Paguaga />} />
       </Route>
     </Routes>
   </BrowserRouter>

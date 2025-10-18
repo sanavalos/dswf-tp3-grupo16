@@ -1,0 +1,28 @@
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.tag.appear {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.tag:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .tag {
+    font-size: 0.8rem;
+  }
+  .tag:hover {
+    transform: scale(1.1);
+  }
+}
