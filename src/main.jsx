@@ -8,9 +8,11 @@ import Layout from "./components/layout/index.jsx";
 import SeccionJson from "./components/seccion-json/index.jsx";
 import Paguaga from "./components/paguaga";
 import { BrowserRouter, Routes, Route } from "react-router";
+import ScrollToTop from "./components/scroll-to-top";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       {/* Layout is parent route */}
       <Route path="/" element={<Layout />}>
