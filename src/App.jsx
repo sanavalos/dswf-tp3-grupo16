@@ -4,8 +4,13 @@ import aixaImg from "./assets/princesa.png";
 import paguagaImg from "./assets/paguaga.png";
 import facundoImg from "./assets/sanchez.jpeg";
 import ivannaImg from "./assets/ivanna.png";
+import { useNavigate } from "react-router";
 
 function App() {
+  let navigate = useNavigate();
+  const routeChange = (path) => {
+    navigate(path);
+  };
   const members = [
     { id: "1", name: "Avalos", image: avalosImg, url: "/avalos" },
     { id: "2", name: "Aixa", image: aixaImg, url: "/aixa" },
@@ -46,7 +51,7 @@ function App() {
               <div className={styles.card}>
                 <img src={m.image} alt={`Integrante ${m.name}`} key={m.id} />
                 <h3>{m.name}</h3>
-                <button>Ver Perfil</button>
+                <button onClick={() => routeChange(m.url)}>Ver Perfil</button>
               </div>
             ))}
           </div>
