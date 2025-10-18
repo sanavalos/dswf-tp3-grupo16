@@ -1,6 +1,9 @@
 .layoutBackground {
  min-height: 100vh;
  width: 100vw;
- background-color: rgb(125, 125, 125);
  display: flex;
+}
+
+.mainWrapper {
+ width: 100%;
 }

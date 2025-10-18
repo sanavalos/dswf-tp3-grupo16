@@ -1,16 +1,27 @@
-import React from 'react'
+import React from "react";
+import styles from "./Sidebar.module.css";
+import SidebarItem from "./SidebarItem";
+import ifts from "../../assets/ifts.jpeg";
 
 function Sidebar() {
+  const sidebarItems = [
+    { id: "1", name: "Portada", path: "/#titulo-variable" },
+    { id: "2", name: "Bitácora", path: "/bitacora" },
+    { id: "3", name: "Sobre Nosotros", path: "/#nosotros" },
+    { id: "4", name: "Integrantes", path: "/#integrantes" },
+    { id: "5", name: "Sección JSON", path: "/seccion-json" },
+    { id: "6", name: "Sección API", path: "/seccion-api" }
+  ];
   return (
-   <ul>
-    <li>Portada</li>
-    <li>Bitacora</li>
-    <li>Sobre Nosotros</li>
-    <li>Integrantes</li>
-    <li>Seccion JSON</li>
-    <li>Seccion API</li>
-   </ul>
-  )
+    <div className={styles.sidebarSection}>
+      <img src={ifts} className={styles.logo} />
+      <ul>
+        {sidebarItems.map((item) => (
+          <SidebarItem data={item} key={item.id} />
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default Sidebar
+export default Sidebar;
