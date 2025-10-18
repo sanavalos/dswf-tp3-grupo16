@@ -1,8 +1,16 @@
 .directorsWrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  margin: 3rem;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .directorsWrapper {
+    grid-template-columns: 1fr;
+    padding: 0 1rem; 
+    margin: 3rem 0;
+  }
+
 }
