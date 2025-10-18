@@ -3,6 +3,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Avalos from "./components/avalos";
 import Bitacora from "./components/bitacora";
+import MovieSection from "./components/seccion-api";
 import Layout from "./components/layout/index.jsx";
 import { BrowserRouter, Routes, Route } from "react-router";
 
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")).render(
         <Route index element={<App />} />
         <Route path="avalos" element={<Avalos />} />
         <Route path="bitacora" element={<Bitacora />} />
+        <Route path="seccion-api" element={<MovieSection />} />
       </Route>
     </Routes>
   </BrowserRouter>

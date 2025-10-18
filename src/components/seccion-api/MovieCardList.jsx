@@ -1,0 +1,22 @@
+import React from "react";
+import MovieCard from "./MovieCard";
+import styles from "./MovieCardList.module.css";
+
+export default function MovieCardList({ movies, genres, onCardClick }) {
+  if (!movies || movies.length === 0) {
+    return <p className={styles.empty}>No se encontraron películas.</p>;
+  }
+
+  return (
+    <div className={styles.grid}>
+      {movies.map((movie) => (
+        <MovieCard
+          key={movie.id}
+          movie={movie}
+          genres={genres}
+          onClick={() => onCardClick(movie)}
+        />
+      ))}
+    </div>
+  );
+}
