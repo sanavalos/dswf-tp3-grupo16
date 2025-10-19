@@ -3,7 +3,7 @@
   background: #fff;
   color: #333;
   line-height: 2.25;
-  padding: 2rem;
+  padding: 4rem 1rem;
   border-right: 1px solid #ddd;
   max-width: fit-content;
   transition: width 0.3s ease, padding 0.3s ease;
@@ -27,6 +27,7 @@
   flex-direction: column;
   align-items: center;
   transition: opacity 0.3s ease;
+  width: max-content;
 }
 
 .toggleButton {
