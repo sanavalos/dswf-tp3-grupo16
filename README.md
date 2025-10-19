@@ -49,7 +49,6 @@ La lógica principal reside en el directorio src, con main.jsx como punto de ent
     │       el_origen.jpg
     │       halftone_bg.avif
     │       ifts.jpeg
-    │       ivanna.png
     │       joker.jpg
     │       matrix.jpg
     │       paguaga.png
