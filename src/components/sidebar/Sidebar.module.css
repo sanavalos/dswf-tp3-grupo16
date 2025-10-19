@@ -5,7 +5,7 @@
   line-height: 2.25;
   padding: 2rem;
   border-right: 1px solid #ddd;
-  min-width: fit-content;
+  max-width: fit-content;
   transition: width 0.3s ease, padding 0.3s ease;
   display: flex;
   flex-direction: column;
