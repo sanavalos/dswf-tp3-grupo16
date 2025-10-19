@@ -1,18 +1,130 @@
-# React + Vite
+# Trabajo Práctico Obligatorio 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## DESCRIPCION
 
-Currently, two official plugins are available:
+Somos un grupo de cinco desarrolladores web apasionados por la tecnología y en constante formación. Actualmente nos encontramos cursando la carrera de Desarrollo de Software, lo que nos permite combinar la práctica profesional con una base académica sólida.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El enfoque de este proyecto es darnos a conocer con nuestros compañeros y crecer como profesionales mientras participamos durante el proyecto, fomentando la colaboración, la innovación y la mejora continua.
 
-## React Compiler
+Incluye una SPA (Single Page Application) con paginación y componentes que permiten el acceso a una portada con información sobre el proyecto, a las tarjetas de los integrantes, secciones donde se consume un archivo JSON y una API, y a la bitácora.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## TECNOLOGIAS UTILIZADAS
 
-Note: This will impact Vite dev & build performances.
+- JSX
+- CSS
+- JavaScript
+- React.js
+- React Router
+- Vite
+- Vercel
 
-## Expanding the ESLint configuration
+## ESTRUCTURA DE ARCHIVOS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Los archivos en la raíz como package.json, vite.config.js, index.html y eslint.config.js son esenciales para la configuración del proyecto, dependencias, build y linteo de código, mientras que la carpeta public contiene como activo estático un archivo de datos (directors-data.json) accesible directamente.
+
+La lógica principal reside en el directorio src, con main.jsx como punto de entrada que renderiza la aplicación definida en App.jsx. Dentro de src, la carpeta assets almacena recursos multimedia, y components es el corazón de la aplicación, agrupando la interfaz en módulos reutilizables (como avalos, paguaga, seccion-api, homepage, etc.), cada uno con sus propios archivos de lógica (.jsx) y estilos modulares (.module.css), facilitando un desarrollo escalable, mantenible y basado en componentes.
+
+```bash
+.
+│   .gitignore
+│   eslint.config.js
+│   index.html
+│   package-lock.json
+│   package.json
+│   README.md
+│   vercel.json
+│   vite.config.js
+│
+├───public
+│       directors-data.json
+│
+└───src
+    │   App.jsx
+    │   App.module.css
+    │   index.css
+    │   main.jsx
+    │
+    ├───assets
+    │       avalos.png
+    │       el_origen.jpg
+    │       halftone_bg.avif
+    │       ifts.jpeg
+    │       ivanna.png
+    │       joker.jpg
+    │       matrix.jpg
+    │       paguaga.png
+    │       sanchez.jpeg
+    │
+    └───components
+        ├───avalos
+        │       Avalos.module.css
+        │       Button.jsx
+        │       Button.module.css
+        │       ButtonsSection.jsx
+        │       ButtonsSection.module.css
+        │       ComicPage.jsx
+        │       ComicPage.module.css
+        │       index.jsx
+        │
+        ├───bitacora
+        │       Bitacora.module.css
+        │       BitacoraItems.jsx
+        │       index.jsx
+        │
+        ├───footer
+        │       Footer.module.css
+        │       index.jsx
+        │
+        ├───homepage
+        │       Homepage.module.css
+        │       index.jsx
+        │
+        ├───paguaga
+        │       BotonNavegacion.jsx
+        │       BotonNavegacion.module.css
+        │       Habilidad.jsx
+        │       Habilidad.module.css
+        │       index.jsx
+        │       index.module.css
+        │       ModalTrailer.jsx
+        │       ModalTrailer.module.css
+        │       Slide.jsx
+        │       Slider.jsx
+        │       Slider.module.css
+        │       Spotify.jsx
+        │       Spotify.module.css
+        │       Tarjeta.jsx
+        │       Tarjeta.module.css
+        │
+        ├───scroll-to-top
+        │       index.jsx
+        │
+        ├───seccion-api
+        │       index.jsx
+        │       MovieCard.jsx
+        │       MovieCard.module.css
+        │       MovieCardList.jsx
+        │       MovieCardList.module.css
+        │       MovieModal.jsx
+        │       MovieModal.module.css
+        │       MovieSection.module.css
+        │
+        ├───seccion-json
+        │       DirectorCard.jsx
+        │       DirectorCard.module.css
+        │       index.jsx
+        │       MovieDirectorList.module.css
+        │
+        └───sidebar
+                index.jsx
+                Sidebar.module.css
+                SidebarItem.jsx
+                SidebarItem.module.css
+```
+
+## LINKS
+
+Deploy: [dswf-tp2-grupo16.vercel.app](https://dswf-tp2-grupo16.vercel.app)
+
+GitHub: [dswf-tp2-grupo16](https://github.com/sanavalos/dswf-tp2-grupo16)
+
