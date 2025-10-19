@@ -13,10 +13,11 @@ function Sidebar() {
   const sidebarItems = [
     { id: "1", name: "Portada", path: "/#titulo-variable" },
     { id: "2", name: "Bitácora", path: "/bitacora" },
-    { id: "3", name: "Sobre Nosotros", path: "/#nosotros" },
-    { id: "4", name: "Integrantes", path: "/#integrantes" },
-    { id: "5", name: "Sección JSON", path: "/seccion-json" },
-    { id: "6", name: "Sección API", path: "/seccion-api" },
+    { id: "3", name: "Diagramas", path: "/diagramas" },
+    { id: "4", name: "Sobre Nosotros", path: "/#nosotros" },
+    { id: "5", name: "Integrantes", path: "/#integrantes" },
+    { id: "6", name: "Sección JSON", path: "/seccion-json" },
+    { id: "7", name: "Sección API", path: "/seccion-api" },
   ];
 
   return (
