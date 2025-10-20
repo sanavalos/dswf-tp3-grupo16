@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import DiagramItems from "./DiagramItems";
+import Title from "../title";
 import styles from "./Diagrams.module.css";
-import diagram1 from "../../assets/tree_diagram.png"
-import diagram2 from "../../assets/structure_diagram.png"
-
-
+import diagram1 from "../../assets/tree_diagram.png";
+import diagram2 from "../../assets/structure_diagram.png";
 
 export default function Diagrams() {
   const [activeTP, setActiveTP] = useState("d2");
@@ -13,7 +12,7 @@ export default function Diagrams() {
 
   return (
     <section className={styles.diagramContainer}>
-      <h2>DIAGRAMAS</h2>
+      <Title title="DIAGRAMAS" />
 
       <div className={styles.diagramButton}>
         <button

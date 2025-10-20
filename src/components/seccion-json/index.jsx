@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DirectorCard from "./DirectorCard";
+import Title from "../title";
 import directorsData from "../../../public/directors-data.json";
 import styles from "./MovieDirectorList.module.css";
 
@@ -13,11 +14,14 @@ const MovieDirectorList = () => {
   }, []);
 
   return (
-    <div className={styles.directorsWrapper}>
-      {directors.map((director) => (
-        <DirectorCard key={director.id} directorData={director} />
-      ))}
-    </div>
+    <>
+      <Title title="DIRECTORES" />
+      <div className={styles.directorsWrapper}>
+        {directors.map((director) => (
+          <DirectorCard key={director.id} directorData={director} />
+        ))}
+      </div>
+    </>
   );
 };
 
