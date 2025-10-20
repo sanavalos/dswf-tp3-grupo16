@@ -8,5 +8,11 @@
 
 .mainWrapper {
   width: 100%;
+  padding-left: 12rem;
 }
 
+@media (max-width: 600px) {
+  .mainWrapper {
+    padding-left: 0;
+  }
+}

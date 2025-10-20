@@ -206,8 +206,8 @@ export default function Tarjeta() {
       </section>
 
       <div className={styles.botonesNavegacion}>
-        <BotonNavegacion texto="Anterior" link="./" />
-        <BotonNavegacion texto="Siguiente" link="./" />
+        <BotonNavegacion texto="Anterior" link="/avalos" />
+        <BotonNavegacion texto="Siguiente" link="/sanchez" />
       </div>
     </main>
   );
