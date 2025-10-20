@@ -6,33 +6,6 @@
   background-color: white;
 }
 
-.bitacoraContainer h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  text-align: center;
-  margin: 4rem auto;
-  padding: 6rem 1rem;
-  background: linear-gradient(270deg, #ff7eb3, #ff758c, #7afcff, #feff9c);
-  background-size: 800% 800%;
-  animation: gradientBG 12s ease infinite;
-  color: #fff;
-}
-
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .tpButtons {
   display: flex;
   justify-content: center;

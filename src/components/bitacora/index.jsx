@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import BitacoraItems from "./BitacoraItems.jsx";
+import Title from "../title";
 import styles from "./Bitacora.module.css";
 
 const entradasTp1 = [
@@ -93,7 +94,7 @@ export default function Bitacora() {
 
   return (
     <section className={styles.bitacoraContainer}>
-      <h2>BITÁCORA</h2>
+      <Title title="BITÁCORA" />
 
       <div className={styles.tpButtons}>
         <button

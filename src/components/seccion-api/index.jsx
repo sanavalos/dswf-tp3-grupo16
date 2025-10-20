@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MovieCardList from "./MovieCardList";
 import MovieModal from "./MovieModal";
+import Title from "../title";
 import styles from "./MovieSection.module.css";
 
 const API_KEY = "38bf25dd56b9a379599ed300ccdbf4ab";
@@ -111,8 +112,7 @@ export default function MovieSection() {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.title}>Películas</h2>
-
+      <Title title="PELÍCULAS" />
       <form onSubmit={handleSearch} className={styles.controls}>
         <div className={styles.inputGroup}>
           <input
@@ -133,7 +133,6 @@ export default function MovieSection() {
           ))}
         </select>
       </form>
-
       {loading ? (
         <p style={{ textAlign: "center", fontStyle: "italic" }}>Cargando...</p>
       ) : (
@@ -143,7 +142,6 @@ export default function MovieSection() {
           onCardClick={handleCardClick}
         />
       )}
-
       {selectedMovie && (
         <MovieModal
           movie={selectedMovie}
