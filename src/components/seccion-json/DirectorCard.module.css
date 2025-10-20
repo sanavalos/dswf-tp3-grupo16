@@ -1,26 +1,90 @@
-h2,
-h3 {
+.cardStyle {
+  min-width: 350px;
+  width: 100%;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  text-align: start;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cardStyle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
   text-align: center;
+  margin-top: 0;
+  color: #333;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 h2 span {
-  font-size: large;
-  color: #878787;
+  font-size: 1rem;
+  color: #6a6a6a;
+  font-weight: 400;
+  margin-top: 0.25rem;
 }
 
-.cardStyle {
-  min-width: 350px; 
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-  text-align: start;
+h3 {
+  text-align: center;
+  color: #007bff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+h4 {
+  color: #555;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #007bff;
+  padding-left: 0.75rem;
+  font-weight: 600;
+}
+
+h4 span {
+  font-size: 1rem;
+}
+
+p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+p strong {
+  font-weight: 700;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+ul li {
+  background-color: #f1f8ff;
+  color: #0056b3;
+  padding: 0.3rem 0.75rem;
+  margin-bottom: 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 900px) {
   .cardStyle {
-    min-width: unset; 
+    min-width: unset;
+    padding: 1.25rem;
   }
 }

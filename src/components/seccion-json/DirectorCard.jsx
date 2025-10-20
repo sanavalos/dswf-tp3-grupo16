@@ -4,11 +4,11 @@ import styles from "./DirectorCard.module.css";
 const DirectorCard = ({ directorData }) => {
   return (
     <div className={styles.cardStyle}>
-      <h2>{directorData.director} <span>({directorData.nationality})</span></h2>
+      <h2>
+        {directorData.director} <span>({directorData.nationality})</span>
+      </h2>
       <h3>{directorData.known_for_genre}</h3>
-      <p>
-        <strong>Activo:</strong> {directorData.era_active}
-      </p>
+      <h4>Activo: <span>{directorData.era_active}</span></h4>
 
       <h4>Filmaciones notables:</h4>
       <ul>
