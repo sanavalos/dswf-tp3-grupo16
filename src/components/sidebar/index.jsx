@@ -1,14 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Sidebar.module.css";
 import SidebarItem from "./SidebarItem";
 import ifts from "../../assets/ifts.jpeg";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+  const toggleSidebar = () => setIsOpen((prev) => !prev);
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth <= 600;
+      setIsMobile(mobile);
+      if (mobile) setIsOpen(false);
+      else setIsOpen(true);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const sidebarItems = [
     { id: "1", name: "Portada", path: "/#titulo-variable" },
@@ -21,20 +33,34 @@ function Sidebar() {
   ];
 
   return (
-    <div className={`${styles.sidebarSection} ${!isOpen ? styles.closed : ""}`}>
-      <button className={styles.toggleButton} onClick={toggleSidebar}>
-        {isOpen ? "<<" : ">>"}
-      </button>
+    <>
+      {isMobile && !isOpen && (
+        <button className={styles.hamburger} onClick={toggleSidebar}>
+          ☰
+        </button>
+      )}
 
-      <div className={styles.sidebarContent}>
-        <img src={ifts} className={styles.logo} alt="Logo" />
-        <ul>
-          {sidebarItems.map((item) => (
-            <SidebarItem data={item} key={item.id} isOpen={isOpen} />
-          ))}
-        </ul>
+      <div
+        className={`${styles.sidebarSection} ${
+          isOpen ? styles.mobileOpen : styles.mobileClosed
+        } ${isMobile ? styles.mobile : ""}`}
+      >
+        {isMobile && (
+          <button className={styles.toggleButton} onClick={toggleSidebar}>
+            ×
+          </button>
+        )}
+
+        <div className={styles.sidebarContent}>
+          <img src={ifts} className={styles.logo} alt="Logo" />
+          <ul>
+            {sidebarItems.map((item) => (
+              <SidebarItem data={item} key={item.id} />
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
