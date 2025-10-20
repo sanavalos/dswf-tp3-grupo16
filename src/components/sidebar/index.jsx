@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Sidebar.module.css";
 import SidebarItem from "./SidebarItem";
-import ifts from "../../assets/ifts.jpeg";
+import reactivos from "../../assets/reactivos.jpeg";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(true);
@@ -52,7 +52,7 @@ function Sidebar() {
         )}
 
         <div className={styles.sidebarContent}>
-          <img src={ifts} className={styles.logo} alt="Logo" />
+          <img src={reactivos} className={styles.logo} alt="Logo" />
           <ul>
             {sidebarItems.map((item) => (
               <SidebarItem data={item} key={item.id} />
