@@ -10,8 +10,8 @@ function Avalos() {
       <ComicPage />
       <ButtonsSection
         buttonData={[
-          { text: "anterior", url: "/ivanna" },
-          { text: "siguiente", url: "/aixa" }
+          { text: "anterior", url: "/sanchez" },
+          { text: "siguiente", url: "/paguaga" }
         ]}
       />
     </div>

@@ -10,3 +10,10 @@
   display: flex;
   justify-content: start;
 }
+
+@media (max-width: 900px) {
+  .buttonsWrapper {
+    gap: 2rem;
+    justify-content: center;
+  }
+}
