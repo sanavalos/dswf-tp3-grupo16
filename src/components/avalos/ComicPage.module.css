@@ -271,13 +271,6 @@
   z-index: -1;
 }
 
-.bottom-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 @keyframes pageCurl {
   0% {
     width: 100px;
@@ -346,15 +339,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .wrapper {
-    margin-top: none;
-  }
-
-  .bottom-buttons {
-    gap: 2rem;
-    justify-content: center;
-  }
-
   .animatedFold {
     animation: none !important;
     clip-path: none !important;
@@ -386,15 +370,6 @@
   50% {
     transform: translateY(-10px);
   }
-}
-
-.wrapper {
-  display: flex;
-  justify-content: end;
-}
-.prevWrapper {
-  display: flex;
-  justify-content: start;
 }
 
 .animatedFold {
