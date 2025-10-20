@@ -5,4 +5,5 @@
   font-size: 0.875rem;
   color: #555;
   width: 100%;
+  z-index: 999;
 }

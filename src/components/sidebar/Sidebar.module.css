@@ -1,5 +1,5 @@
 .sidebarSection {
-  position: fixed; /* 🔹 Sidebar fijo */
+  position: sticky;
   top: 0;
   left: 0;
   height: 100vh;
@@ -73,7 +73,7 @@
   .hamburger {
     background: none;
     border: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #333;
     position: fixed;
     top: 1rem;
