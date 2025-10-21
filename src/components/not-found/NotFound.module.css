@@ -1,0 +1,12 @@
+.notFoundContainer {
+  padding: 0 1rem 1rem 1rem;
+  max-width: 70rem;
+  min-height: 100vh;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
