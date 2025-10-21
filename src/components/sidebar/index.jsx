@@ -23,7 +23,7 @@ function Sidebar() {
   }, []);
 
   const sidebarItems = [
-    { id: "1", name: "Portada", path: "/#titulo-variable" },
+    { id: "1", name: "Portada", path: "/" },
     { id: "2", name: "Bitácora", path: "/bitacora" },
     { id: "3", name: "Diagramas", path: "/diagramas" },
     { id: "4", name: "Sobre Nosotros", path: "/#nosotros" },
