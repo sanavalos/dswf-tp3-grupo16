@@ -78,6 +78,10 @@ La lógica principal reside en el directorio src, con main.jsx como punto de ent
         │       Homepage.module.css
         │       index.jsx
         │
+        ├───not-found
+        │       NotFound.module.css
+        │       index.jsx
+        │
         ├───paguaga
         │       BotonNavegacion.jsx
         │       BotonNavegacion.module.css
@@ -113,12 +117,18 @@ La lógica principal reside en el directorio src, con main.jsx como punto de ent
         │       DirectorCard.module.css
         │       index.jsx
         │       MovieDirectorList.module.css
+        │       
+        ├───sidebar
+        │        index.jsx
+        │        Sidebar.module.css
+        │        SidebarItem.jsx
+        │        SidebarItem.module.css
         │
-        └───sidebar
+        └───title
                 index.jsx
-                Sidebar.module.css
-                SidebarItem.jsx
-                SidebarItem.module.css
+                Title.module.css
+
+
 ```
 
 ## LINKS
