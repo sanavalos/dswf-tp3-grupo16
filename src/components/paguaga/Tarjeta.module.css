@@ -16,6 +16,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.tarjeta section {
+  padding-top: 0;
+}
+
 .tarjeta section:not(:first-of-type):not(:last-of-type) {
   position: relative;
   padding-bottom: 4rem;
