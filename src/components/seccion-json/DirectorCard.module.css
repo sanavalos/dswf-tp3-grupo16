@@ -15,7 +15,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.cardStyle h2 {
   text-align: center;
   margin-top: 0;
   color: #333;
@@ -24,14 +24,14 @@ h2 {
   line-height: 1.2;
 }
 
-h2 span {
+.cardStyle h2 span {
   font-size: 1rem;
   color: #6a6a6a;
   font-weight: 400;
   margin-top: 0.25rem;
 }
 
-h3 {
+.cardStyle h3 {
   text-align: center;
   color: #007bff;
   font-size: 1.1rem;
@@ -40,7 +40,7 @@ h3 {
   border-bottom: 2px solid #e9ecef;
 }
 
-h4 {
+.cardStyle h4 {
   color: #555;
   font-size: 1.1rem;
   margin-top: 1.5rem;
@@ -50,28 +50,28 @@ h4 {
   font-weight: 600;
 }
 
-h4 span {
+.cardStyle h4 span {
   font-size: 1rem;
 }
 
-p {
+.cardStyle p {
   color: #444;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-p strong {
+.cardStyle p strong {
   font-weight: 700;
   color: #333;
 }
 
-ul {
+.cardStyle ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 1.5rem;
 }
 
-ul li {
+.cardStyle ul li {
   background-color: #f1f8ff;
   color: #0056b3;
   padding: 0.3rem 0.75rem;

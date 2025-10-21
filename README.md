@@ -48,10 +48,10 @@ La lógica principal reside en el directorio src, con main.jsx como punto de ent
     │       avalos.png
     │       el_origen.jpg
     │       halftone_bg.avif
-    │       ifts.jpeg
     │       joker.jpg
     │       matrix.jpg
     │       paguaga.png
+    │       reactivos.jpeg
     │       sanchez.jpeg
     │
     └───components
