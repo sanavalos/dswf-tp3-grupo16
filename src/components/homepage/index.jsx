@@ -23,7 +23,7 @@ function Homepage() {
         <section id="nosotros">
           <h2>SOBRE NOSOTROS</h2>
           <p>
-            Somos un grupo de cinco desarrolladores web apasionados por la
+            Somos un grupo de tres desarrolladores web apasionados por la
             tecnología y en constante formación. Actualmente nos encontramos
             cursando la carrera de Desarrollo de Software, lo que nos permite
             combinar la práctica profesional con una base académica sólida. Nos
