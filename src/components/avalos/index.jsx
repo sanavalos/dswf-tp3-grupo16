@@ -1,4 +1,3 @@
-import React from "react";
 import ComicPage from "./ComicPage.jsx";
 import ButtonsSection from "./ButtonsSection.jsx";
 import styles from "./Avalos.module.css";
