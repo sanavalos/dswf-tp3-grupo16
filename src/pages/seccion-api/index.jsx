@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MovieCardList from "./MovieCardList";
 import MovieModal from "./MovieModal";
-import Title from "../title";
+import Title from "../../components/title";
 import styles from "./MovieSection.module.css";
 
 const API_KEY = "38bf25dd56b9a379599ed300ccdbf4ab";

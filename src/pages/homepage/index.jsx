@@ -1,5 +1,5 @@
 import styles from "./Homepage.module.css";
-import Title from "../title";
+import Title from "../../components/title";
 import avalosImg from "../../assets/avalos.png";
 import paguagaImg from "../../assets/paguaga.png";
 import facundoImg from "../../assets/sanchez.jpeg";

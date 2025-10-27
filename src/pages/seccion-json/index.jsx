@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import DirectorCard from "./DirectorCard";
-import Title from "../title";
+import DirectorCard from "../../components/director-card";
+import Title from "../../components/title";
 import directorsData from "../../../public/directors-data.json";
 import styles from "./MovieDirectorList.module.css";
 

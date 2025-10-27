@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button.jsx";
+import Button from "../button";
 import styles from "./ButtonsSection.module.css";
 
 function ButtonsSection({ buttonData }) {

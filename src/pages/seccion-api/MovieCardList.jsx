@@ -1,5 +1,5 @@
 import React from "react";
-import MovieCard from "./MovieCard";
+import MovieCard from "../../components/movie-card";
 import styles from "./MovieCardList.module.css";
 
 export default function MovieCardList({ movies, genres, onCardClick }) {

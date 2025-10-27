@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Habilidad from "./Habilidad";
-import Slider from "./Slider";
-import ModalTrailer from "./ModalTrailer";
-import Spotify from "./Spotify";
-import BotonNavegacion from "./BotonNavegacion";
+import Habilidad from "../../components/habilidad";
+import Slider from "../../components/slider";
+import ModalTrailer from "../../components/modal-trailer";
+import Spotify from "../../components/spotify";
+import BotonNavegacion from "../../components/boton-navegacion";
 import styles from "./Tarjeta.module.css";
 import imgAvatar from "../../assets/paguaga.png";
 import imgOrigen from "../../assets/el_origen.jpg";

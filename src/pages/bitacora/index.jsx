@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BitacoraItems from "./BitacoraItems.jsx";
-import Title from "../title";
+import Title from "../../components/title";
 import styles from "./Bitacora.module.css";
 
 const entradasTp1 = [

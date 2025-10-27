@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DiagramItems from "./DiagramItems";
-import Title from "../title";
+import Title from "../../components/title";
 import styles from "./Diagrams.module.css";
 import diagram1 from "../../assets/tree_diagram.png";
 import diagram2 from "../../assets/structure_diagram.png";

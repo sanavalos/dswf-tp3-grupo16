@@ -1,14 +1,14 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-import Avalos from "./components/avalos";
-import Bitacora from "./components/bitacora";
-import Diagrams from "./components/diagramas";
-import MovieSection from "./components/seccion-api";
-import Homepage from "./components/homepage/index.jsx";
-import SeccionJson from "./components/seccion-json/index.jsx";
-import Paguaga from "./components/paguaga";
-import NotFound from "./components/not-found"
+import Avalos from "./pages/avalos";
+import Bitacora from "./pages/bitacora";
+import Diagrams from "./pages/diagramas";
+import MovieSection from "./pages/seccion-api";
+import Homepage from "./pages/homepage/index.jsx";
+import SeccionJson from "./pages/seccion-json/index.jsx";
+import Paguaga from "./pages/paguaga";
+import NotFound from "./pages/not-found"
 import { BrowserRouter, Routes, Route } from "react-router";
 import ScrollToTop from "./components/scroll-to-top";
 

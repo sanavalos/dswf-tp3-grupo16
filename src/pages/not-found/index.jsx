@@ -1,6 +1,6 @@
 import React from "react";
-import Title from "../title";
-import Button from "../avalos/Button";
+import Title from "../../components/title";
+import Button from "../../components/button";
 import styles from "./NotFound.module.css";
 
 function NotFound() {

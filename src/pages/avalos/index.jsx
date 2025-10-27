@@ -1,5 +1,5 @@
 import ComicPage from "./ComicPage.jsx";
-import ButtonsSection from "./ButtonsSection.jsx";
+import ButtonsSection from "../../components/buttons-section";
 import styles from "./Avalos.module.css";
 
 function Avalos() {
