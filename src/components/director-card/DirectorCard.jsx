@@ -7,7 +7,7 @@ const DirectorCard = ({ directorData }) => {
       <h2>
         {directorData.director} <span>({directorData.nationality})</span>
       </h2>
-      <h3>{directorData.known_for_genre}</h3>
+      <h3>{directorData.known_for_genre.join(", ")}</h3>
       <h4>Activo: <span>{directorData.era_active}</span></h4>
 
       <h4>Filmaciones notables:</h4>
