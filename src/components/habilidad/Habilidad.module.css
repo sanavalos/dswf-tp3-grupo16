@@ -1,28 +1,67 @@
-.tag {
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-weight: bold;
+.habilidad {
+  width: 100%;
+  max-width: 220px;
+  margin: 1rem auto;
   color: white;
-  display: inline-block;
-  transform: scale(0);
-  opacity: 0;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  font-family: "Roboto", sans-serif;
 }
 
-.tag.appear {
-  transform: scale(1);
-  opacity: 1;
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
 }
 
-.tag:hover {
-  transform: scale(1.2);
+.nombre {
+  font-size: 1rem;
+}
+
+.nivelTexto {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.barra {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progreso {
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 1.5s ease-out;
+}
+
+.visible {
+  width: var(--nivel, 0%);
 }
 
 @media (max-width: 600px) {
-  .tag {
-    font-size: 0.8rem;
+  .habilidad {
+    max-width: 90%;
   }
-  .tag:hover {
-    transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+  .habilidad {
+    max-width: 100%;
+    margin: 0.3rem 0;
+  }
+
+  .nombre {
+    font-size: 0.85rem;
+  }
+
+  .nivelTexto {
+    font-size: 0.75rem;
+  }
+
+  .barra {
+    height: 8px;
   }
 }

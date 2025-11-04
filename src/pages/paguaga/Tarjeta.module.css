@@ -96,8 +96,10 @@
 
 .info {
   text-align: center;
-  margin-bottom: 3rem;
+  padding: 0;
+  margin-bottom: 1rem;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .info h1 {
@@ -110,12 +112,12 @@
   text-align: center;
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.barras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
+  justify-items: center;
+  margin-top: 1.5rem;
 }
 
 .habilidades h2,
@@ -130,12 +132,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 2rem auto 1rem auto;
-}
-
-.info {
-  font-family: "Roboto", sans-serif;
-  margin: 0 0 2rem 0;
+  margin: 4rem auto 1rem auto;
 }
 
 .habilidades,
@@ -150,6 +147,58 @@
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   justify-items: center;
+}
+
+.navTabs {
+  display: flex;
+  justify-content: center;
+  background: #2b2b2b;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 1.5rem auto;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tabBtn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ccc;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.activeTab {
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  color: white;
+  box-shadow: 0 0 12px rgba(249, 115, 22, 0.5);
+}
+
+.tabContent {
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 900px) {
@@ -185,9 +234,6 @@
   .musica {
     margin: 1rem 0;
   }
-  .tags {
-    gap: 0.5rem;
-  }
   .spotifyGrid {
     display: grid;
     gap: 2rem;
@@ -196,5 +242,29 @@
   }
   .btnHome {
     font-size: 0.6rem;
+  }
+  .barras {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .barras {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .tarjeta {
+    padding: 0.8rem;
+  }
+
+  .habilidades h2 {
+    font-size: 1rem;
+  }
+
+  .spotifyGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }

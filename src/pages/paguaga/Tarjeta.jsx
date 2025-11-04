@@ -13,18 +13,21 @@ import imgJoker from "../../assets/joker.jpg";
 export default function Tarjeta() {
   const [modalUrl, setModalUrl] = useState("");
   const [modalAbierto, setModalAbierto] = useState(false);
+  const [activeTab, setActiveTab] = useState("habilidades");
 
   const habilidades = [
-    { nombre: "HTML", color: "#e34c26" },
-    { nombre: "CSS", color: "#264de4" },
-    { nombre: "Tailwind", color: "#38bdf8" },
-    { nombre: "JavaScript", color: "#f0db4f", textColor: "black" },
-    { nombre: "Vue.js", color: "#42b883" },
-    { nombre: "C#", color: "#9b4f96" },
-    { nombre: "Java", color: "#f89820" },
-    { nombre: "Python", color: "#306998" },
-    { nombre: "MySQL", color: "#00758f" },
-    { nombre: "Git", color: "#f1502f" },
+    { nombre: "HTML", color: "#E44D26", nivel: 95 },
+    { nombre: "CSS", color: "#1572B6", nivel: 75 },
+    { nombre: "Tailwind", color: "#38BDF8", nivel: 50 },
+    { nombre: "JavaScript", color: "#F7DF1E", nivel: 80 },
+    { nombre: "React", color: "#61DAFB", nivel: 50 },
+    { nombre: "Vue.js", color: "#42B883", nivel: 70 },
+    { nombre: "C#", color: "#9B4F96", nivel: 60 },
+    { nombre: "Java", color: "#F89820", nivel: 90 },
+    { nombre: "Python", color: "#3776AB", nivel: 65 },
+    { nombre: "MySQL", color: "#00618A", nivel: 80 },
+    { nombre: "MongoDB", color: "#4DB33D", nivel: 60 },
+    { nombre: "Git", color: "#DE4C36", nivel: 75 },
   ];
 
   const slides = [
@@ -171,43 +174,71 @@ export default function Tarjeta() {
         </p>
       </section>
 
-      <section className={styles.habilidades}>
-        <h2>Habilidades</h2>
-        <div className={styles.tags}>
-          {habilidades.map((h, i) => (
-            <Habilidad
-              key={i}
-              nombre={h.nombre}
-              color={h.color}
-              delay={i * 0.2}
+      <div className={styles.navTabs}>
+        <button
+          className={`${styles.tabBtn} ${
+            activeTab === "habilidades" ? styles.activeTab : ""
+          }`}
+          onClick={() => setActiveTab("habilidades")}
+        >
+          Habilidades
+        </button>
+        <button
+          className={`${styles.tabBtn} ${
+            activeTab === "peliculas" ? styles.activeTab : ""
+          }`}
+          onClick={() => setActiveTab("peliculas")}
+        >
+          Películas
+        </button>
+        <button
+          className={`${styles.tabBtn} ${
+            activeTab === "musica" ? styles.activeTab : ""
+          }`}
+          onClick={() => setActiveTab("musica")}
+        >
+          Música
+        </button>
+      </div>
+
+      <div className={styles.tabContent}>
+        {activeTab === "habilidades" && (
+          <div className={styles.barras}>
+            {habilidades.map((h, i) => (
+              <Habilidad
+                key={i}
+                nombre={h.nombre}
+                color={h.color}
+                nivel={h.nivel}
+                delay={i * 0.2}
+              />
+            ))}
+          </div>
+        )}
+
+        {activeTab === "peliculas" && (
+          <>
+            <Slider slides={slides} onVerTrailer={abrirModal} />
+            <ModalTrailer
+              url={modalUrl}
+              abierto={modalAbierto}
+              onCerrar={cerrarModal}
             />
-          ))}
-        </div>
-      </section>
+          </>
+        )}
 
-      <section className={styles.peliculas}>
-        <h2>Películas Favoritas</h2>
-        <Slider slides={slides} onVerTrailer={abrirModal} />
-      </section>
-
-      <ModalTrailer
-        url={modalUrl}
-        abierto={modalAbierto}
-        onCerrar={cerrarModal}
-      />
-
-      <section className={styles.musica}>
-        <h2>Música Favorita</h2>
-        <div className={styles.spotifyGrid}>
-          {canciones.map((cancion, i) => (
-            <Spotify key={i} cancion={cancion} />
-          ))}
-        </div>
-      </section>
+        {activeTab === "musica" && (
+          <div className={styles.spotifyGrid}>
+            {canciones.map((c, i) => (
+              <Spotify key={i} cancion={c} />
+            ))}
+          </div>
+        )}
+      </div>
 
       <div className={styles.botonesNavegacion}>
         <BotonNavegacion texto="Anterior" link="/avalos" />
-        <BotonNavegacion texto="Siguiente" link="/sanchez" />
+        <BotonNavegacion texto="Siguiente" link="/avalos" />
       </div>
     </main>
   );
