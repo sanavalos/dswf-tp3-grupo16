@@ -2,7 +2,6 @@ import styles from "./Homepage.module.css";
 import Title from "../../components/title";
 import avalosImg from "../../assets/avalos.png";
 import paguagaImg from "../../assets/paguaga.png";
-import facundoImg from "../../assets/sanchez.jpeg";
 import { useNavigate } from "react-router";
 
 function Homepage() {
@@ -13,7 +12,6 @@ function Homepage() {
   const members = [
     { id: "1", name: "Avalos", image: avalosImg, url: "/avalos" },
     { id: "3", name: "Paguaga", image: paguagaImg, url: "/paguaga" },
-    { id: "4", name: "Facundo", image: facundoImg, url: "/facundo" },
   ];
   return (
     <>
