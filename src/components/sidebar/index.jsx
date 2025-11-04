@@ -28,8 +28,8 @@ function Sidebar() {
     { id: "3", name: "Diagramas", path: "/diagramas" },
     { id: "4", name: "Sobre Nosotros", path: "/#nosotros" },
     { id: "5", name: "Integrantes", path: "/#integrantes" },
-    { id: "6", name: "Sección JSON", path: "/seccion-json" },
-    { id: "7", name: "Sección API", path: "/seccion-api" },
+    { id: "6", name: "Directores", path: "/directores" },
+    { id: "7", name: "Películas", path: "/peliculas" },
   ];
 
   return (
