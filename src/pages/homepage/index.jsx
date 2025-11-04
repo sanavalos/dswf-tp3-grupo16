@@ -21,17 +21,17 @@ function Homepage() {
         <section id="nosotros">
           <h2>SOBRE NOSOTROS</h2>
           <p>
-            Somos un grupo de tres desarrolladores web apasionados por la
-            tecnología y en constante formación. Actualmente nos encontramos
-            cursando la carrera de Desarrollo de Software, lo que nos permite
-            combinar la práctica profesional con una base académica sólida. Nos
-            une el interés por crear soluciones digitales que sean funcionales,
-            escalables y centradas en el usuario. Trabajamos en equipo,
-            compartiendo conocimientos y fortaleciendo nuestras habilidades en
-            el area del desarrollo front-end. El enfoque de este proyecto es
-            darnos a conocer con nuestros compañeros y crecer como profesionales
-            mientras participamos durante el proyecto, fomentando la
-            colaboración, la innovación y la mejora continua.
+            Somos dos desarrolladores web apasionados por la tecnología y en
+            constante formación. Actualmente nos encontramos cursando la carrera
+            de Desarrollo de Software, lo que nos permite combinar la práctica
+            profesional con una base académica sólida. Nos une el interés por
+            crear soluciones digitales que sean funcionales, escalables y
+            centradas en el usuario. Trabajamos en equipo, compartiendo
+            conocimientos y fortaleciendo nuestras habilidades en el area del
+            desarrollo front-end. El enfoque de este proyecto es darnos a
+            conocer con nuestros compañeros y crecer como profesionales mientras
+            participamos durante el proyecto, fomentando la colaboración, la
+            innovación y la mejora continua.
           </p>
         </section>
 
