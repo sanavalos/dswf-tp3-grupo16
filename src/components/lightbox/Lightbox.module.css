@@ -1,0 +1,72 @@
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.image {
+  max-width: 80%;
+  max-height: 80%;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
+.info {
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.releaseDate {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 0.3rem;
+}
+
+.closeBtn,
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.closeBtn {
+  top: 20px;
+  right: 30px;
+}
+
+.prevBtn {
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.nextBtn {
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
