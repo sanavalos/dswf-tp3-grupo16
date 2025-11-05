@@ -87,10 +87,48 @@ const entradasTp2 = [
   },
 ];
 
-export default function Bitacora() {
-  const [activeTP, setActiveTP] = useState("tp2");
+const entradasTp3 = [
+  {
+    titulo: "Etapa 1: Planificación y organización inicial",
+    descripcion:
+      "Nos reunimos para revisar los objetivos del TP3, definir las nuevas tareas y seleccionar las 5 mejoras obligatorias a implementar. Se creó un nuevo repositorio exclusivo para esta entrega, así como el entorno de despliegue en Vercel.",
+    fecha: "26/10/2025",
+  },
+  {
+    titulo: "Etapa 2: División de tareas y creación del Trello",
+    descripcion:
+      "Creamos un tablero de Trello para organizar las tareas y trabajar de manera asincrónica. Cada integrante tomó responsabilidad sobre una o más mejoras, garantizando la distribución equitativa del trabajo.",
+    fecha: "27/10/2025",
+  },
+  {
+    titulo: "Etapa 3: Implementación de mejoras seleccionadas",
+    descripcion:
+      "Cada integrante trabajó en su parte: se agregaron animaciones suaves en transiciones, búsqueda y filtrado en JSON, paginación para la API, una galería interactiva con lightbox y barras de progreso en los perfiles.",
+    fecha: "02/11/2025",
+  },
+  {
+    titulo: "Etapa 4: Revisión de código y pruebas colaborativas",
+    descripcion:
+      "Realizamos una code review grupal para revisar la coherencia del código, la consistencia visual y la adaptabilidad en distintos dispositivos. Se corrigieron detalles y se mejoró la responsividad del sitio.",
+    fecha: "05/11/2025",
+  },
+  {
+    titulo: "Etapa 5: Documentación y entrega final",
+    descripcion:
+      "Actualizamos el archivo README.md documentando las mejoras implementadas con capturas de antes y después. Finalmente, realizamos la entrega oficial subiendo los enlaces de GitHub y Vercel en la planilla de entrega.",
+    fecha: "06/11/2025",
+  },
+];
 
-  const entradas = activeTP === "tp1" ? entradasTp1 : entradasTp2;
+export default function Bitacora() {
+  const [activeTP, setActiveTP] = useState("tp3");
+
+  const entradas =
+    activeTP === "tp1"
+      ? entradasTp1
+      : activeTP === "tp2"
+      ? entradasTp2
+      : entradasTp3;
 
   return (
     <section className={styles.bitacoraContainer}>
@@ -108,6 +146,12 @@ export default function Bitacora() {
           onClick={() => setActiveTP("tp2")}
         >
           TP2
+        </button>
+        <button
+          className={activeTP === "tp3" ? styles.active : ""}
+          onClick={() => setActiveTP("tp3")}
+        >
+          TP3
         </button>
       </div>
 
