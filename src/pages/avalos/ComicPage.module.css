@@ -436,3 +436,38 @@
     border-width: 65px 65px 0 0;
   }
 }
+
+.skillItem {
+  position: relative;
+  min-height: 55px;
+  cursor: pointer;
+  border: 1px solid #444;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  transition: opacity 0.8s ease;
+}
+
+.skillName {
+  font-weight: bold;
+  text-align: center;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

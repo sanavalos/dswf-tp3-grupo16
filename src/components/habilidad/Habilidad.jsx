@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Habilidad.module.css";
 
-export default function Habilidad({ nombre, color, nivel, delay }) {
+export default function Habilidad({ nombre, color, nivel, delay, colorTexto="inherit", fuenteTexto="inherit" }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function Habilidad({ nombre, color, nivel, delay }) {
   return (
     <div className={styles.habilidad}>
       <div className={styles.info}>
-        <span className={styles.nombre}>{nombre}</span>
+        <span className={styles.nombre} style={{ color: colorTexto, fontFamily: fuenteTexto}}>{nombre}</span>
         <span className={styles.nivelTexto}>{nivel}%</span>
       </div>
       <div className={styles.barra}>
