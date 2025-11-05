@@ -11,6 +11,7 @@ import Paguaga from "./pages/paguaga";
 import NotFound from "./pages/not-found";
 import { BrowserRouter, Routes, Route } from "react-router";
 import ScrollToTop from "./components/scroll-to-top";
+import "animate.css"
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
