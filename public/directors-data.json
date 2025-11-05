@@ -4,7 +4,7 @@
     "director": "Alfred Hitchcock",
     "nationality": "Británico",
     "era_active": "1920s-1970s",
-    "known_for_genre": "Thriller, Suspenso",
+    "known_for_genre": ["Thriller", "Suspenso"],
     "notable_films": ["Psycho", "Vertigo", "Rear Window", "The Birds"],
     "signature_style_elements": ["Apariciones cameo", "MacGuffins", "Temas de voyeurismo"]
   },
@@ -13,7 +13,7 @@
     "director": "Stanley Kubrick",
     "nationality": "Estadounidense",
     "era_active": "1950s-1990s",
-    "known_for_genre": "Diverso (Ciencia Ficción, Bélico, Drama)",
+    "known_for_genre": ["Ciencia Ficción", "Bélico", "Drama"],
     "notable_films": ["2001: A Space Odyssey", "The Shining", "A Clockwork Orange", "Dr. Strangelove"],
     "signature_style_elements": ["Perspectiva de un solo punto", "Simetría", "Tomas con Steadicam"]
   },
@@ -22,7 +22,7 @@
     "director": "Steven Spielberg",
     "nationality": "Estadounidense",
     "era_active": "1960s-Presente",
-    "known_for_genre": "Éxito de taquilla, Aventura, Drama histórico",
+    "known_for_genre": ["Éxito de taquilla", "Aventura", "Drama histórico"],
     "notable_films": ["Jaws", "E.T. the Extra-Terrestrial", "Jurassic Park", "Schindler's List"],
     "signature_style_elements": ["Sentido de asombro", "Contraluz", "Temas infantiles/familiares"]
   },
@@ -31,7 +31,7 @@
     "director": "Martin Scorsese",
     "nationality": "Estadounidense",
     "era_active": "1960s-Presente",
-    "known_for_genre": "Crimen, Gánster, Biografía",
+    "known_for_genre": ["Crimen", "Gánster", "Biografía"],
     "notable_films": ["Taxi Driver", "Raging Bull", "Goodfellas", "The Departed"],
     "signature_style_elements": ["Narración en voz en off", "Tomas en cámara lenta", "Movimientos complejos de cámara"]
   },
@@ -40,7 +40,7 @@
     "director": "Francis Ford Coppola",
     "nationality": "Estadounidense",
     "era_active": "1960s-Presente",
-    "known_for_genre": "Drama épico, Crimen",
+    "known_for_genre": ["Drama épico", "Crimen"],
     "notable_films": ["The Godfather", "Apocalypse Now", "The Conversation", "The Godfather Part II"],
     "signature_style_elements": ["Cinematografía oscura y rica", "Temas de poder y familia", "Tomas largas"]
   },
@@ -49,7 +49,7 @@
     "director": "Akira Kurosawa",
     "nationality": "Japonés",
     "era_active": "1940s-1990s",
-    "known_for_genre": "Jidaigeki (Drama de época), Acción",
+    "known_for_genre": ["Jidaigeki (Drama de época)", "Acción"],
     "notable_films": ["Seven Samurai", "Rashomon", "Ran", "Yojimbo"],
     "signature_style_elements": ["Transiciones de barrido", "Acción en movimiento", "Uso de elementos naturales (viento, lluvia)"]
   },
@@ -58,7 +58,7 @@
     "director": "Ingmar Bergman",
     "nationality": "Sueco",
     "era_active": "1940s-2000s",
-    "known_for_genre": "Cine de autor, Drama psicológico",
+    "known_for_genre": ["Cine de autor", "Drama psicológico"],
     "notable_films": ["The Seventh Seal", "Persona", "Fanny and Alexander", "Wild Strawberries"],
     "signature_style_elements": ["Primeros planos de rostros", "Temas de fe y moralidad", "Paletas monocromáticas"]
   },
@@ -67,7 +67,7 @@
     "director": "Quentin Tarantino",
     "nationality": "Estadounidense",
     "era_active": "1990s-Presente",
-    "known_for_genre": "Neo-Noir, Crimen",
+    "known_for_genre": ["Neo-Noir", "Crimen"],
     "notable_films": ["Pulp Fiction", "Reservoir Dogs", "Inglourious Basterds", "Kill Bill"],
     "signature_style_elements": ["Narrativas no lineales", "Diálogos agudos y estilizados", "Uso extensivo de música"]
   },
@@ -76,7 +76,7 @@
     "director": "Christopher Nolan",
     "nationality": "Británico-Estadounidense",
     "era_active": "1990s-Presente",
-    "known_for_genre": "Ciencia Ficción, Thriller",
+    "known_for_genre": ["Ciencia Ficción", "Thriller"],
     "notable_films": ["The Dark Knight", "Inception", "Interstellar", "Oppenheimer"],
     "signature_style_elements": ["Manipulación compleja del tiempo", "Efectos prácticos", "Preferencia por el cine no digital"]
   },
@@ -85,7 +85,7 @@
     "director": "Fritz Lang",
     "nationality": "Austriaco-Alemán/Estadounidense",
     "era_active": "1910s-1960s",
-    "known_for_genre": "Expresionista, Ciencia Ficción, Cine negro",
+    "known_for_genre": ["Expresionista", "Ciencia Ficción", "Cine negro"],
     "notable_films": ["Metropolis", "M", "The Big Heat", "Woman in the Moon"],
     "signature_style_elements": ["Sombras e iluminación de alto contraste", "Sets de gran escala", "Temas de tecnología/sociedad"]
   },
@@ -94,7 +94,7 @@
     "director": "Billy Wilder",
     "nationality": "Austriaco-Estadounidense",
     "era_active": "1920s-1980s",
-    "known_for_genre": "Comedia, Cine negro, Drama",
+    "known_for_genre": ["Comedia", "Cine negro", "Drama"],
     "notable_films": ["Sunset Boulevard", "Some Like It Hot", "The Apartment", "Double Indemnity"],
     "signature_style_elements": ["Diálogo agudo", "Humor negro", "Visión cínica de la naturaleza humana"]
   },
@@ -103,7 +103,7 @@
     "director": "Federico Fellini",
     "nationality": "Italiano",
     "era_active": "1940s-1990s",
-    "known_for_genre": "Surrealismo, Cine de autor",
+    "known_for_genre": ["Surrealismo", "Cine de autor"],
     "notable_films": ["8½", "La Dolce Vita", "Amarcord", "Nights of Cabiria"],
     "signature_style_elements": ["Imágenes carnavalescas", "Secuencias de sueños", "Estilo visual grandioso y extravagante"]
   },
@@ -112,7 +112,7 @@
     "director": "Chloé Zhao",
     "nationality": "Chino-Estadounidense",
     "era_active": "2010s-Presente",
-    "known_for_genre": "Drama independiente",
+    "known_for_genre": ["Drama independiente"],
     "notable_films": ["Nomadland", "The Rider", "Songs My Brothers Taught Me"],
     "signature_style_elements": ["Uso de actores no profesionales", "Cinematografía de luz natural", "Temas del Oeste americano"]
   },
@@ -121,7 +121,7 @@
     "director": "Hayao Miyazaki",
     "nationality": "Japonés",
     "era_active": "1960s-Presente",
-    "known_for_genre": "Animación, Fantasía",
+    "known_for_genre": ["Animación", "Fantasía"],
     "notable_films": ["Spirited Away", "Princess Mononoke", "My Neighbor Totoro", "Howl's Moving Castle"],
     "signature_style_elements": ["Temas de ambientalismo", "Protagonistas femeninas fuertes", "Animación detallada dibujada a mano"]
   },
@@ -130,7 +130,7 @@
     "director": "Kathryn Bigelow",
     "nationality": "Estadounidense",
     "era_active": "1980s-Presente",
-    "known_for_genre": "Acción, Thriller, Bélico",
+    "known_for_genre": ["Acción", "Thriller", "Bélico"],
     "notable_films": ["The Hurt Locker", "Zero Dark Thirty", "Point Break", "Near Dark"],
     "signature_style_elements": ["Realismo intenso", "Secuencias de acción de alto riesgo", "Ambigüedad moral"]
   },
@@ -139,7 +139,7 @@
     "director": "Orson Welles",
     "nationality": "Estadounidense",
     "era_active": "1930s-1980s",
-    "known_for_genre": "Drama, Cine negro",
+    "known_for_genre": ["Drama", "Cine negro"],
     "notable_films": ["Citizen Kane", "The Lady from Shanghai", "Touch of Evil", "The Magnificent Ambersons"],
     "signature_style_elements": ["Cinematografía de enfoque profundo", "Tomas de ángulo bajo", "Diálogo superpuesto"]
   },
@@ -148,7 +148,7 @@
     "director": "Satyajit Ray",
     "nationality": "Indio",
     "era_active": "1950s-1990s",
-    "known_for_genre": "Drama social",
+    "known_for_genre": ["Drama social"],
     "notable_films": ["Pather Panchali", "Aparajito", "The World of Apu", "Charulata"],
     "signature_style_elements": ["Realismo poético", "Temas humanistas", "Observación detallada de la vida"]
   },
@@ -157,7 +157,7 @@
     "director": "Lana & Lilly Wachowski",
     "nationality": "Estadounidense",
     "era_active": "1990s-Presente",
-    "known_for_genre": "Ciencia Ficción, Acción",
+    "known_for_genre": ["Ciencia Ficción", "Acción"],
     "notable_films": ["The Matrix", "V for Vendetta (Escritoras)", "Cloud Atlas", "Sense8"],
     "signature_style_elements": ["Efectos visuales innovadores", "Temas filosóficos", "Tiempo bala"]
   },
@@ -166,7 +166,7 @@
     "director": "Jordan Peele",
     "nationality": "Estadounidense",
     "era_active": "2010s-Presente",
-    "known_for_genre": "Terror, Sátira social",
+    "known_for_genre": ["Terror", "Sátira social"],
     "notable_films": ["Get Out", "Us", "Nope"],
     "signature_style_elements": ["Comentario social a través del género", "Humor inquietante", "Finales con giro"]
   },
@@ -175,7 +175,7 @@
     "director": "Jane Campion",
     "nationality": "Neozelandés",
     "era_active": "1980s-Presente",
-    "known_for_genre": "Drama",
+    "known_for_genre": ["Drama"],
     "notable_films": ["The Piano", "Bright Star", "The Power of the Dog"],
     "signature_style_elements": ["Enfoque en la experiencia femenina", "Imágenes sensuales y viscerales", "Detallados escenarios de época"]
   }
