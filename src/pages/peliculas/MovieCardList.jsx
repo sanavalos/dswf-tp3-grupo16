@@ -8,7 +8,7 @@ export default function MovieCardList({ movies, genres, onCardClick }) {
   }
 
   return (
-    <div className={styles.grid}>
+    <div className={`${styles.grid} animate__animated animate__bounceInUp`}>
       {movies.map((movie) => (
         <MovieCard
           key={movie.id}

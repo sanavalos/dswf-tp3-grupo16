@@ -69,7 +69,7 @@ const MovieDirectorList = () => {
         </select>
       </div>
 
-      <div className={styles.directorsWrapper}>
+      <div className={`${styles.directorsWrapper} animate__animated animate__bounceInRight`}>
         {filteredDirectors.length > 0 ? (
           filteredDirectors.map((d) => (
             <DirectorCard key={d.id} directorData={d} />
