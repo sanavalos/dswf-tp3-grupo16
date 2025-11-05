@@ -1,12 +1,25 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ComicPage.module.css";
 import avalosImg from "../../assets/avalos.png";
+import Habilidad from "../../components/habilidad";
 
 function ComicPage() {
   const fullTitle = "GERMÁN AVALOS";
+  const skills = [
+    { nombre: "HTML5", color: "#E44D26", nivel: 90 },
+    { nombre: "CSS3", color: "#1572B6", nivel: 70 },
+    { nombre: "JAVASCRIPT", color: "#F7DF1E", nivel: 90 },
+    { nombre: "REACT", color: "#61DAFB", nivel: 85 },
+    { nombre: "NODE.JS", color: "#42B883", nivel: 65 },
+    { nombre: "PYTHON", color: "#3776AB", nivel: 85 },
+    { nombre: "DJANGO", color: "#4DB33D", nivel: 80 },
+    { nombre: "POSTGRESQL", color: "#3776AB", nivel: 60 },
+    { nombre: "GIT", color: "#DE4C36", nivel: 70 }
+  ];
 
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
     if (currentIndex < fullTitle.length) {
@@ -64,15 +77,40 @@ function ComicPage() {
         <div className={`${styles.panel} ${styles.skillsPanel}`}>
           <h2 className={styles.panelTitle}>HABILIDADES</h2>
           <div className={styles.skillsGrid}>
-            <div className={styles.skillItem}>HTML5</div>
-            <div className={styles.skillItem}>CSS3</div>
-            <div className={styles.skillItem}>JAVASCRIPT</div>
-            <div className={styles.skillItem}>REACT</div>
-            <div className={styles.skillItem}>NODE.JS</div>
-            <div className={styles.skillItem}>PYTHON</div>
-            <div className={styles.skillItem}>DJANGO</div>
-            <div className={styles.skillItem}>POSTGRESQL</div>
-            <div className={styles.skillItem}>GIT</div>
+            {skills.map((s, i) => (
+
+              <div
+                key={i}
+                className={styles.skillItem}
+                onMouseEnter={() => setHoveredIndex(i)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <div
+                  className={`
+                ${styles.skillContent} 
+                ${styles.skillName}
+                ${hoveredIndex === i ? styles.hidden : styles.visible}
+              `}
+                >
+                  {s.nombre}
+                </div>
+                <div
+                  className={`
+                ${styles.skillContent} 
+                ${hoveredIndex === i ? styles.visible : styles.hidden}
+              `}
+                >
+                  <Habilidad
+                    nombre={s.nombre}
+                    color={s.color}
+                    colorTexto="black"
+                    fuenteTexto="Permanent Marker"
+                    nivel={s.nivel}
+                    delay={0}
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
