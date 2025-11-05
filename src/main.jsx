@@ -5,6 +5,7 @@ import Avalos from "./pages/avalos";
 import Bitacora from "./pages/bitacora";
 import Diagrams from "./pages/diagramas";
 import Peliculas from "./pages/peliculas/index.jsx";
+import Estrenos from "./pages/estrenos/index.jsx";
 import Homepage from "./pages/homepage/index.jsx";
 import Directores from "./pages/directores/index.jsx";
 import Paguaga from "./pages/paguaga";
@@ -24,6 +25,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="diagramas" element={<Diagrams />} />
         <Route path="peliculas" element={<Peliculas />} />
         <Route path="directores" element={<Directores />} />
+        <Route path="estrenos" element={<Estrenos />} />
         <Route path="paguaga" element={<Paguaga />} />
         <Route path="*" element={<NotFound />} />
       </Route>

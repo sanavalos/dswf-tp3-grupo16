@@ -41,8 +41,8 @@ function Homepage() {
 
           <div className={styles.cards}>
             {members.map((m) => (
-              <div className={styles.card}>
-                <img src={m.image} alt={`Integrante ${m.name}`} key={m.id} />
+              <div className={styles.card} key={m.id}>
+                <img src={m.image} alt={`Integrante ${m.name}`} />
                 <h3>{m.name}</h3>
                 <button onClick={() => routeChange(m.url)}>Ver Perfil</button>
               </div>

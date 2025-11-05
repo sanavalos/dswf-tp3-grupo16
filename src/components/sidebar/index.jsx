@@ -30,6 +30,7 @@ function Sidebar() {
     { id: "5", name: "Integrantes", path: "/#integrantes" },
     { id: "6", name: "Directores", path: "/directores" },
     { id: "7", name: "Películas", path: "/peliculas" },
+    { id: "8", name: "Estrenos", path: "/estrenos" },
   ];
 
   return (
