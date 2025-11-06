@@ -3,7 +3,7 @@ import styles from "./ImageGallery.module.css";
 
 export default function ImageGallery({ movies, onImageClick }) {
   return (
-    <div className={styles.imageGrid}>
+    <div className={`${styles.imageGrid} animate__animated animate__bounceInUp`}>
       {movies.map((movie, index) => (
         <div
           key={movie.id}
