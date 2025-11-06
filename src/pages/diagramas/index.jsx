@@ -29,7 +29,7 @@ export default function Diagrams() {
         </button>
       </div>
 
-      <DiagramItems entradas={entradas} />
+      <DiagramItems key={activeTP} entradas={entradas} />
     </section>
   );
 }
