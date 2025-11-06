@@ -155,7 +155,7 @@ export default function Bitacora() {
         </button>
       </div>
 
-      <BitacoraItems entradas={entradas} />
+      <BitacoraItems key={activeTP} entradas={entradas} />
     </section>
   );
 }
