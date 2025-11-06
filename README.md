@@ -15,6 +15,7 @@ Incluye una SPA (Single Page Application) con paginación y componentes que perm
 - JavaScript
 - React.js
 - React Router
+- Animate.css
 - Vite
 - Vercel
 
@@ -29,14 +30,13 @@ La lógica principal reside en el directorio src, con main.jsx como punto de ent
 │   .gitignore
 │   eslint.config.js
 │   index.html
-│   package-lock.json
 │   package.json
 │   README.md
 │   vercel.json
 │   vite.config.js
 │
 ├───public
-│       directors-data.json
+│       directors-data.json      
 │
 └───src
     │   App.jsx
@@ -52,15 +52,75 @@ La lógica principal reside en el directorio src, con main.jsx como punto de ent
     │       matrix.jpg
     │       paguaga.png
     │       reactivos.jpeg
-    │       sanchez.jpeg
+    │       structure_diagram.png
+    │       tree_diagram.png
     │
-    └───components
+    ├───components
+    │   ├───boton-navegacion
+    │   │       BotonNavegacion.module.css
+    │   │       index.jsx
+    │   │
+    │   ├───button
+    │   │       Button.module.css
+    │   │       index.jsx
+    │   │       
+    │   ├───buttons-section
+    │   │       ButtonsSection.module.css
+    │   │       index.jsx
+    │   │
+    │   ├───director-card
+    │   │       DirectorCard.module.css
+    │   │       index.jsx
+    │   │
+    │   ├───footer
+    │   │       Footer.module.css
+    │   │       index.jsx
+    │   │
+    │   ├───habilidad
+    │   │       Habilidad.module.css
+    │   │       index.jsx
+    │   │
+    │   ├───image-gallery
+    │   │       ImageGallery.module.css
+    │   │       index.jsx
+    │   │
+    │   ├───lightbox
+    │   │       index.jsx
+    │   │       Lightbox.module.css
+    │   │
+    │   ├───modal-trailer
+    │   │       index.jsx
+    │   │       ModalTrailer.module.css
+    │   │
+    │   ├───movie-card
+    │   │       index.jsx
+    │   │       MovieCard.module.css
+    │   │
+    │   ├───scroll-to-top
+    │   │       index.jsx
+    │   │
+    │   ├───sidebar
+    │   │       index.jsx
+    │   │       Sidebar.module.css
+    │   │       SidebarItem.jsx
+    │   │       SidebarItem.module.css
+    │   │
+    │   ├───slider
+    │   │       index.jsx
+    │   │       Slide.jsx
+    │   │       Slider.module.css
+    │   │
+    │   ├───spotify
+    │   │       index.jsx
+    │   │       Spotify.module.css
+    │   │
+    │   └───title
+    │           index.jsx
+    │           Title.module.css
+    │
+    └───pages
         ├───avalos
         │       Avalos.module.css
-        │       Button.jsx
-        │       Button.module.css
-        │       ButtonsSection.jsx
-        │       ButtonsSection.module.css
         │       ComicPage.jsx
         │       ComicPage.module.css
         │       index.jsx
@@ -70,8 +130,16 @@ La lógica principal reside en el directorio src, con main.jsx como punto de ent
         │       BitacoraItems.jsx
         │       index.jsx
         │
-        ├───footer
-        │       Footer.module.css
+        ├───diagramas
+        │       DiagramItems.jsx
+        │       Diagrams.module.css
+        │       index.jsx
+        │
+        ├───directores
+        │       index.jsx
+        │       MovieDirectorList.module.css
+        │
+        ├───estrenos
         │       index.jsx
         │
         ├───homepage
@@ -79,56 +147,22 @@ La lógica principal reside en el directorio src, con main.jsx como punto de ent
         │       index.jsx
         │
         ├───not-found
-        │       NotFound.module.css
         │       index.jsx
+        │       NotFound.module.css
         │
         ├───paguaga
-        │       BotonNavegacion.jsx
-        │       BotonNavegacion.module.css
-        │       Habilidad.jsx
-        │       Habilidad.module.css
         │       index.jsx
         │       index.module.css
-        │       ModalTrailer.jsx
-        │       ModalTrailer.module.css
-        │       Slide.jsx
-        │       Slider.jsx
-        │       Slider.module.css
-        │       Spotify.jsx
-        │       Spotify.module.css
         │       Tarjeta.jsx
         │       Tarjeta.module.css
         │
-        ├───scroll-to-top
-        │       index.jsx
-        │
-        ├───seccion-api
-        │       index.jsx
-        │       MovieCard.jsx
-        │       MovieCard.module.css
-        │       MovieCardList.jsx
-        │       MovieCardList.module.css
-        │       MovieModal.jsx
-        │       MovieModal.module.css
-        │       MovieSection.module.css
-        │
-        ├───seccion-json
-        │       DirectorCard.jsx
-        │       DirectorCard.module.css
-        │       index.jsx
-        │       MovieDirectorList.module.css
-        │       
-        ├───sidebar
-        │        index.jsx
-        │        Sidebar.module.css
-        │        SidebarItem.jsx
-        │        SidebarItem.module.css
-        │
-        └───title
+        └───peliculas
                 index.jsx
-                Title.module.css
-
-
+                MovieCardList.jsx
+                MovieCardList.module.css
+                MovieModal.jsx
+                MovieModal.module.css
+                MovieSection.module.css
 ```
 
 ## LINKS
