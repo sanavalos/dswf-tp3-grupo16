@@ -326,8 +326,8 @@ Se añadieron barras de progreso animadas que representan visualmente el nivel d
 En la entrega anterior, los perfiles mostraban únicamente una lista estática de habilidades sin ningún tipo de indicador visual o animación.
 Esto hacía difícil percibir el nivel de dominio de cada habilidad.
 
-**Tarjeta Ávalos:**  
-![Habilidades antes Ávalos](./src/assets/avalos_habilidades_tp2.gif)
+**Tarjeta Avalos:**  
+![Habilidades antes Avalos](./src/assets/avalos_habilidades_tp2.gif)
 
 **Tarjeta Paguaga:**  
 ![Habilidades antes Paguaga](./src/assets/paguaga_habilidades_tp2.gif)
@@ -336,8 +336,8 @@ Esto hacía difícil percibir el nivel de dominio de cada habilidad.
 
 Ahora, las habilidades se representan con barras de progreso animadas, transmitiendo de forma clara y visual el nivel de competencia de cada integrante.
 
-**Tarjeta Ávalos:**  
-![Habilidades después Ávalos](./src/assets/avalos_habilidades_tp3.gif)
+**Tarjeta Avalos:**  
+![Habilidades después Avalos](./src/assets/avalos_habilidades_tp3.gif)
 
 **Tarjeta Paguaga:**  
 ![Habilidades después Paguaga](./src/assets/paguaga_habilidades_tp3.gif)
@@ -349,6 +349,6 @@ Ahora, las habilidades se representan con barras de progreso animadas, transmiti
 
 ## LINKS
 
-Deploy: [dswf-tp2-grupo16.vercel.app](https://dswf-tp2-grupo16.vercel.app)
+Deploy: [dswf-tp3-grupo16.vercel.app](https://dswf-tp3-grupo16.vercel.app/)
 
-GitHub: [dswf-tp2-grupo16](https://github.com/sanavalos/dswf-tp2-grupo16)
+GitHub: [dswf-tp3-grupo16](https://github.com/sanavalos/dswf-tp3-grupo16)
